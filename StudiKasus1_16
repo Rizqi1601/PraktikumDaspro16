@@ -1,0 +1,16 @@
+import java.util.Scanner;
+
+public class PraktikumDaspro16 {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.println("Selamat datang di KEDAI KOPI SENJA");
+        
+        int hargaPerCup = 18000;
+        
+        System.out.println("Anda ingin membeli berapa cup Susu Gula Aren?");
+        int jumlahCup = sc.nextInt();
+
+        System.out.println("Silakan memasukkan jumlah uang tunai anda!");
+        int uangBayar = sc.nextInt();
