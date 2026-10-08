@@ -43,6 +43,24 @@ public class StudiKasus2_16 {
                         + "(kurang " + dokumenKurang + " dokumen).");
                 System.out.println("Dana penghargaan tidak diberikan.");
             }
+        } else if (jenisKegiatan.equalsIgnoreCase("PKM")) {
+            if (jumlahDokumen == 4) {
+                System.out.printf("%-55s : ", "Status pendanaan PKM");
+                statusPendanaanPKM = sc.nextInt();
+                if (statusPendanaanPKM == 1) {
+                    System.out.println("Status : Dokumen lengkap.");
+                    System.out.println("Dana penghargaan diberikan.");
+                } else {
+                    System.out.println("Status : Dokumen lengkap.");
+                    System.out.println("Dana penghargaan tidak diberikan.");
+                }
+            } else {
+                System.out.println("Status : Dokumen tidak lengkap "
+                        + "(kurang " + dokumenKurang + " dokumen).");
+                System.out.println("Dana penghargaan tidak diberikan.");
+            }
+        } else {
+            System.out.println("Status : Lomba tidak ditemukan");
         }
     }
 }
